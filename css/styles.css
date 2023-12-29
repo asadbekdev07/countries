@@ -1,3 +1,34 @@
+/* CUSTOM PROPS  */
+:root {
+  --accent-color: #111517;
+  --bg-color: #fafafa;
+}
+
+/* FONT-FACE  */
+@font-face {
+  font-display: swap;
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/nunito-sans-v15-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/nunito-sans-v15-latin-600.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/nunito-sans-v15-latin-800.woff2") format("woff2");
+}
+
 /* GLOBAL  */
 html {
   box-sizing: border-box;
@@ -19,6 +50,7 @@ body {
   margin: 0;
   font-family: "Arial", sans-serif;
   font-size: 16px;
+  line-height: 14px;
   background-color: #ffffff;
   color: #222222;
 }
@@ -32,9 +64,9 @@ img {
 
 .container {
   width: 100%;
-  max-width: 1200px;
-  padding-left: 50px;
-  padding-right: 50px;
+  max-width: 1440px;
+  padding-left: 80px;
+  padding-right: 80px;
   margin-left: auto;
   margin-right: auto;
 }
