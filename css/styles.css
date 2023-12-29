@@ -48,7 +48,7 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Arial", sans-serif;
+  font-family: "Nunito Sans", "Arial", sans-serif;
   font-size: 16px;
   line-height: 14px;
   background-color: #ffffff;
@@ -74,4 +74,37 @@ img {
 /* MAIN-CONTENT  */
 .main-content {
   flex-grow: 1;
+}
+
+/* SITE-HEADER  */
+.site-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 80px;
+  background-color: #ffffff;
+  color: var(--accent-color);
+}
+.site-header-heading {
+  padding: 0;
+  margin: 0;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: normal;
+}
+.dark-mode {
+  font-weight: 600;
+  line-height: normal;
+  background-image: url("../img/mode-changer.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  text-decoration: none;
+  color: var(--accent-color);
+}
+.dark-mode::before {
+  width: 20px;
+  height: 20px;
+  margin-left: 110px;
+  content: "";
 }
