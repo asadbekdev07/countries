@@ -13,9 +13,30 @@
   <header class="site-header">
     <div class="site-header-container container">
       <h2 class="site-header-heading">Where in the world?</h2>
-      <a class="dark-mode" href="#">Dark Mode</a>
+      <a class="mode-changer" href="#">Dark Mode</a>
     </div>
   </header>
+
+  <main class="main-content">
+    <div class="container">
+      <form class="website-form" action="https//:echo.htmlacademy.ru" method="get">
+        <div class="form-fields">
+          <input class="form-field" type="search" name="search" placeholder="Search for a country…" aria-label="Search for a country…">
+
+          <div class="datalist-wrapper">
+            <input class="filter-regions" type="text" name="region" list="region-list" placeholder="Filter by Region">
+            <datalist id="region-list">
+              <option>Africa</option>
+              <option>America</option>
+              <option>Asia</option>
+              <option>Europe</option>
+              <option>Oceania</option>
+            </datalist>
+          </div>
+        </div>
+      </form>
+    </div>
+  </main>
 <script src="js/main.js"></script>
 </body>
 </html>

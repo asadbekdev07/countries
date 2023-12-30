@@ -1,7 +1,8 @@
 /* CUSTOM PROPS  */
 :root {
   --accent-color: #111517;
-  --bg-color: #fafafa;
+  --element-bg: #ffffff;
+  --body-bg: #fafafa;
 }
 
 /* FONT-FACE  */
@@ -51,8 +52,8 @@ body {
   font-family: "Nunito Sans", "Arial", sans-serif;
   font-size: 16px;
   line-height: 14px;
-  background-color: #ffffff;
-  color: #222222;
+  background-color: var(--element-bg);
+  color: var(--accent-color);
 }
 
 img {
@@ -60,13 +61,24 @@ img {
   height: auto;
 }
 
-/* CONTAINER  */
+a {
+  text-decoration: none;
+}
 
+/* DARK-MODE  */
+.dark-mode {
+  --accent-color: #ffffff;
+  --element-bg: #2b3844;
+  --body-bg: #202c36;
+}
+
+
+/* CONTAINER  */
 .container {
   width: 100%;
-  max-width: 1440px;
-  padding-left: 80px;
-  padding-right: 80px;
+  max-width: 1320px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -74,6 +86,9 @@ img {
 /* MAIN-CONTENT  */
 .main-content {
   flex-grow: 1;
+  padding-top: 48px;
+  padding-bottom: 45px;
+  background-color: var(--body-bg);
 }
 
 /* SITE-HEADER  */
@@ -82,7 +97,7 @@ img {
   justify-content: space-between;
   align-items: center;
   padding: 24px 80px;
-  background-color: #ffffff;
+  background-color: var(--element-bg);
   color: var(--accent-color);
 }
 .site-header-heading {
@@ -92,7 +107,7 @@ img {
   font-weight: 800;
   line-height: normal;
 }
-.dark-mode {
+.mode-changer {
   font-weight: 600;
   line-height: normal;
   background-image: url("../img/mode-changer.svg");
@@ -102,9 +117,40 @@ img {
   text-decoration: none;
   color: var(--accent-color);
 }
-.dark-mode::before {
+.mode-changer::before {
   width: 20px;
   height: 20px;
   margin-left: 110px;
   content: "";
+}
+
+.form-fields {
+  display: flex;
+  justify-content: space-between;
+}
+.form-field {
+  align-items: center;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 55px;
+  padding-right: 270px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  border-radius: 5px;
+  background-color: var(--element-bg);
+  color: #848484;
+  background-image: url("../img/icon-search.svg");
+  background-repeat: no-repeat;
+  background-size: 18px;
+  background-position: 30px center;
+  box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.05);
+}
+.filter-regions {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 24px;
+  border-radius: 5px;
+  background-color: var(--element-bg);
+  box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.05);
 }
