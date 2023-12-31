@@ -90,7 +90,7 @@ a {
 .main-content {
   flex-grow: 1;
   padding-top: 48px;
-  padding-bottom: 45px;
+  padding-bottom: 48px;
   background-color: var(--body-bg);
 }
 
@@ -143,4 +143,29 @@ a {
   margin-left: 8px;
   font-weight: 600;
   line-height: normal;
+}
+
+/* FILTERS  */
+.filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.filters-search-input {
+  min-width: 480px;
+  padding: 18px 74px;
+  border: none;
+  border-radius: 5px;
+  background: var(--element-bg);
+  box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.06);
+}
+.filters-region-select {
+  min-width: 200px;
+  padding: 18px 24px;
+  border: none;
+  border-radius: 5px;
+  background: var(--element-bg);
+  color: var(--accent-color);
+  box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.06);
+
 }
