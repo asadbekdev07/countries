@@ -351,3 +351,7 @@ a {
 .country-page-border-country-link:active {
   opacity: 0.6;
 }
+.bordering-countries {
+  margin: 0;
+  margin-top: 5px;
+}
